@@ -75,7 +75,7 @@ function Category() {
       <button onClick={handleShow} className="btn btn-info">Add New Category</button>
     </div>
     {
-      categories?categories.map(item=>(
+      categories?categories?.map(item=>(
         <div className='border p-3 rounded mt-3 mb-3' droppable 
         onDragOver={(e)=>dragOverCategory(e)}
         onDrop={(e)=>videoDrop(e,item?.id)}>
